@@ -43,7 +43,7 @@ Route::get('/students/update', function () {
 });
 
 Route::get('/students/delete', function () {
-    $student =Student:: where ('email', 'johndoe@newmail.com')->first();
+    $student =Student:: where ('email', 'john.doe@newmail.com')->first();
     $student->delete();
     return 'Student Deleted!';
 });
